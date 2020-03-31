@@ -17,7 +17,7 @@ _JOB_START_URL = 'some_url'
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-j', '--job_id', default=None, required=True, type=int, help='Job ID of rlated job')
-    parser.add_argument('-t', '--task_id', dfault=None, required=True, type=int, help='Task ID of task being launched')
+    parser.add_argument('-t', '--task_id', default=None, required=True, type=int, help='Task ID of task being launched')
     parser.add_argument('-v', '--verbose', action='store_true')
     args = parser.parse_args()
 
