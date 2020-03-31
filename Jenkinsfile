@@ -18,13 +18,13 @@ pipeline {
                 stage('T1') {
                     agent { label "${LABEL_SET}" }
                     steps {
-                        sh "sudo python3 /usr/lab_auto/run_task.py -v -j $(api_job_id) -t 2058"
+                        sh "sudo python3 /usr/lab_auto/run_task.py -v -j ${api_job_id} -t 2058"
                     }
                 }
                 stage('T2') {
                     agent { label "${LABEL_SET}" }
                     steps {
-                        sh "sudo python3 /usr/lab_auto/run_task.py -v -j $(api_job_id) -t 2057"
+                        sh "sudo python3 /usr/lab_auto/run_task.py -v -j ${api_job_id} -t 2057"
                     }
                 }
             }
