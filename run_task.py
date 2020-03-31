@@ -31,6 +31,6 @@ if __name__ == '__main__':
     else:
         level = logging.INFO
 
-    logging.basicConfig(filename='./test.log', level=level, format='%(asctime)s - %(levelname)s - %(message)s')
+    logging.basicConfig(filename='test.log', level=level, format='%(asctime)s - %(levelname)s - %(message)s')
 
     logging.info('job_id: *{}* *{}*'.format(job_id, task_id))
